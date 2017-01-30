@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<link href='https://fonts.googleapis.com/css?family=Londrina+Shadow' rel='stylesheet' type='text/css'>
+<title> Business Website</title>
+<style>
+body {
+font-family: helvetica, sans-serif;
+  margin: 0 auto;
+  max-width: 600px;
+  background: #232323;
+}
+div {
+  height: 200px;
+  background-size: cover;
+  position: relative;
+  margin: 40px 0 0 0;
+  border-radius: 14px;
+}
+h1 {
+  font-family: 'Londrina Shadow', cursive;
+  text-align: center;
+  font-size: 90px;
+  color: #f7b91a;
+  margin: 60px 0 0 0;
+}
+h2 {
+  text-align: center;
+  color: #bbbbbb;
+  margin: 0px 0 70px 0;
+}
+h3 {
+  text-align: center;
+  color: #bbbbbb;
+  margin: 0px 0 20px 0;
+}
+
+p {
+  color: rgba(255,255,255,1);
+  background: black;
+  background: linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
+  background: -webkit-linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
+  background: -moz-linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
+  padding: 10px;
+  line-height: 28px;
+  text-align: justify;
+  position: absolute;
+  bottom: 0;
+  margin: 0;
+  height: 30px;
+  transition: height .5s;
+  -webkit-transition: height .5s;
+ -moz-transition: height .5s;
+}
+small{
+  opacity:0;
+  }
+.show-description p{
+  height: 150px;
+}
+.show-description small{
+  opacity:1;
+}
+
+
+.first{
+  background-image: url("http://imageshack.com/a/img921/6926/T44CWS.jpg");
+}
+.second{
+  background-image: url("http://imageshack.com/a/img923/5458/hqRBvj.jpg");
+}
+.third{
+  background-image: url("http://imageshack.com/a/img921/6740/70bSuc.jpg");
+}
+.fourth{
+    background-image: url("http://imageshack.com/a/img923/7135/MyNS3E.jpg");
+}
+.fifth{
+    background-image: url("http://imageshack.com/a/img923/776/ga5s0Q.jpg");
+}
+
+@media (max-width: 500px){
+  h1{
+     font-size:50px;
+     margin-top:20px;
+     line-height: 40px;
+  }
+  h2{
+    font-size:20px;
+    margin: 20px 0 30px 0;
+    }
+  h3{
+    font-size: 12px;
+    margin: 20px 0 25px 0;
+    }
+  div{
+    margin: 20px 12px 0 12px;
+    }
+  p{
+    font-size: 20px;
+    line-height:24px;
+    }
+ small{
+      font-size:20px;
+      }
+}
+input{
+  border:0;
+  padding:10px;
+  font-size:17px;
+}
+input[type="submit"]
+{
+  background:brown;
+  color:black;
+}
+ul {
+  padding: 10px;
+  background: rgba(10,0,0,0.5);
+}
+li {
+  display: inline;
+    padding: 0px 15px 0px 15px;
+
+}
+</style>
+
+</head>
+
+<body>
+<h1>QuickShop</h1>
+<h2>An online shopping store</h2>
+<div class="first show-description">
+  <p>End of season sale<button style="float: right;"><b> View More </b></button><br />
+  <small>Hurray! Get upto 60% off and cashback on all the range of products from 1st February to 5th February. </small></p>
+</div>
+
+<div class="second show-description">
+  <p>Fashion <button style="float: right;"><b> View More </b></button> <br />
+  <small>Choose from wide range of men's wear, women's wear, kid's wear and accessories at an unbelievable price. </small></p>
+</div>
+
+<div class="third show-description">
+  <p>Electronics <button style="float: right;"> <b>View More </b></button> <br />
+  <small> Wide range of smartphones, laptops, LED's and all other smart gadgets. Grab them to make your life smarter!</small></p>
+</div>
+
+<div class="fourth show-description">
+  <p>Home Furnishing <button style="float: right;"><b> View More</b> </button> <br />
+  <small> Millions of products to choose and to flourish your home with new and trending styles of furniture with whole range of home decor. </small></p>
+</div>
+
+<div class="fifth show-description">
+  <p>Stationary <button style="float: right;"> <b>View More</b> </button> <br />
+  <small>Enjoy!!! Shop from our newly added category containing study and office material including novels.<br />
+    <a href="#">Notebooks</a><br /> <a href="#"> Pen and pencils</a><br /> <a href="#">Novels </a><br/></small></p>
+</div>
+
+<h3>New to QuickShop?<br /><br />
+ Create your new account</h3>
+ <center><input type="email" placeholder="Enter your email">
+ <input type="submit" value="Submit"></center><br />
+ <center><input type="password" placeholder="Password">
+ <input type="submit" value="Submit"></center><br />
+ <h3>Already our customer?</h3>
+ <center><input type="submit" value="Sign in"></center> <br />
+
+<center><ul>
+  <li><a href="#">Contact Us</a></li>
+  <li><a href="#">Gift Card</a></li>
+  <li><a href="#">Reviews</a></li>
+</ul></center><br />
+<h3> Thanks for visiting Quickshop! </h3>
+
+
+<script>
+$('div').on('click', function() {
+  $(this).toggleClass('show-description');
+});
+$("button").on("click", function() {
+  alert("Thanks for viewing!");
+});
+</script>
+
+</body>
+</html>
